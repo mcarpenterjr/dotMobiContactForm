@@ -8,9 +8,9 @@
 }
 
 .vertical-middle{
-    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    vertical-align: middle;
 }
 
 p {
@@ -37,7 +37,7 @@ em {
 
 .container {
     margin-bottom: 30px;
-    max-width: 1024px;
+    max-width: 1244px;
     width: 95%;
     padding: 10px;
 
@@ -46,14 +46,11 @@ em {
 .header {
     display: flex;
     padding-bottom: 10px;
-    border-bottom: 2px;
-    border-bottom-style: outset;
-    border-color: #ababab;
     max-width: 100%;
 }
 .brndimg {
     height: 100%;
-    width: 87px;
+    width: 150px;
     float: left;
     border-radius: 10px;
     border: 2px;
@@ -72,17 +69,28 @@ em {
 .namespace h1 {
     color: #ffffff;
     font-family: Bangers, sans-serif;
-    font-size: 64px;
+    font-size: 54px;
     font-weight: 100;
     letter-spacing: 150%;
     text-shadow: 1px 4px 6px #000000, 0 0 0 #000, 1px 4px 6px #000000;
 }
 
-.namespace h3 {
+.namespace h2{
     color: #ffffff;
     font-family: Orbitron, sans-serif;
     font-weight: 400;
+    font-size: 22px;
     text-shadow: 1px 4px 6px #634271, 0 0 0 #000, 1px 4px 6px #634271;
+    line-height: 10px;    
+}
+
+.namespace h3 {
+    color: #fff000;
+    font-family: Orbitron, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: 1px 4px 3px #634271, 0 0 0 #000, 1px 4px 4px #634271;
+    line-height: 10px;
 }
 
 .content {
@@ -111,15 +119,25 @@ em {
 .hidden {
     display: none;
 }
-
-.vertical-middle {
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
+    /*
+    *
+    *   This starts the overrides for the Bootstrap framework.
+    *
+    *   Using all of the same Bootstrap classes.
+    *
+    */
+    
+.panel{
+    background: none;
+    border-radius: 15px;
+    overflow: hidden;
+    
 }
 
-.panel{
-
+.panel-heading{
+    font-family: Bangers, sans-serif;
+    font-size: 48px;
+    line-height: 1.0;
 }
 
 .panel.panel-default {
@@ -132,57 +150,6 @@ em {
 .message {
     padding: 15px; 
     margin: 0;
-}
-
-#examples {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    max-width: 100%;
-    height: auto;
-    border-top: 2px;
-    border-top-style: outset;
-    border-color: #ababab;
-}
-
-#examples h1 {
-    color: #ffffff;
-    font-family: Bangers, sans-serif;
-    font-size: 36px;
-    font-weight: 100;
-    letter-spacing: 150%;
-    text-shadow: 1px 4px 6px #000000, 0 0 0 #000, 1px 4px 6px #000000;
-}
-
-#examples h3 {
-    color: #ffffff;
-    font-family: Bangers, sans-serif;
-    font-size: 28px;
-    font-weight: 100;
-    letter-spacing: 180%;
-    text-shadow: 1px 4px 6px #000000, 0 0 0 #ababab, 1px 4px 6px #634271;
-}
-
-.example {
-    float: left;
-    margin-right: 10px;
-    width: calc((100% - 24px)/3);
-    
-}
-.example:last-of-type {
-    margin-right: 0;
-}
-
-.example img {
-    max-height: 100%;
-    max-width: 100%;
-    border: 2px;
-    border-radius: 10px;
-    border-style: inset;
-    border-color: #ababab;
-    overflow: hidden;
-    margin-bottom: 10px;
-    
 }
 
 #footer {
@@ -210,9 +177,6 @@ em {
     background: #eee;
     overflow: hidden;
     cursor: pointer;
-}
-
-.social {
     box-shadow: 1px 4px 6px #634271, 0 0 0 #000, 1px 4px 6px #634271;
     text-shadow: 1px 4px 6px #634271, 0 0 0 #000, 1px 4px 6px #634271;
 }
